@@ -168,6 +168,8 @@ with open('catboost_model-2.pickle', 'rb') as f:
 prediction=model.predict(pool1)
 pred=prediction[0]
 
+st.set_option('deprecation.showPyplotGlobalUse', False)
+
 if st.button('Predict Rental Price'):
    st.header("The predicted rental price is " + " $" + str(round(pred,2)))
    explainer = shap.TreeExplainer(model)
