@@ -11,7 +11,6 @@ The dataset used for predicting rental house prices is sourced from Craigslist, 
 - Data Analytics & Dashboard with Tableau
 - [Exploratory Data Analysis](#exploratory-data-analysis-and-feature-enginerring)
 - [Modelling & Performance Evaluation](#model-performance-evaluation)
-- [Model Performance Improvement](#model-performance-improvement)
 - [Feature Importance](#feature-importance)
 - [Build Web App and deployment with Streamlit](#deployment)
 - [Conclusion](#conclusion)
