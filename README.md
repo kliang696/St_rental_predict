@@ -87,6 +87,14 @@ Since the categorical values in the dataset are nominal, we will use the pandas 
 cat= ['region', 'type', 'laundry_options', 'parking_options', 'state']
 df_encoded = pd.get_dummies(df, columns=cat)
 ```
+## Modelling & Performance Evaluation
+The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and R2. The table below clearly indicates that Catboost performed  better than both Lgbm and Linear regression. After Hyper-parameter tunning, Lgbm outperformed the catboost and linear regression.
+
+<table><tr>
+<td><img width="539" alt="Screen Shot 2023-03-11 at 23 41 21" src="https://user-images.githubusercontent.com/89816441/224524788-4e1df892-baf8-4b80-856a-ea64181d24d7.png">
+<td><img width="539" alt="Screen Shot 2023-03-11 at 23 41 52" src="https://user-images.githubusercontent.com/89816441/224524808-5d88b16d-b465-4f89-8859-44f46e8b83d2.png">
+</tr></table>
+
 
 
 
