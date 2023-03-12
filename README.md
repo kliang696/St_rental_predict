@@ -28,7 +28,7 @@ my_df["parking_options"].fillna("no parking", inplace=True)
 my_df["laundry_options"].fillna("no laundry on site", inplace=True)
 my_df.dropna(inplace=True)
 ```
-<img width="304" alt="Screen Shot 2023-03-11 at 22 42 44" src="https://user-images.githubusercontent.com/89816441/224522999-36916793-a482-4881-9617-0524e0b870b7.png">
+
 
 
 2. __Drop the unnessary column__
