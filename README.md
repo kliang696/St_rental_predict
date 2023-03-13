@@ -103,8 +103,8 @@ The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and
 </tr></table>
 
 <table><tr>
-<td><img width="1326" alt="Screen Shot 2023-03-13 at 01 53 14" src="https://user-images.githubusercontent.com/89816441/224618827-d426c733-c468-4d80-bae7-70f6164ae70c.png">
-<td><img width="1359" alt="Screen Shot 2023-03-13 at 01 55 35" src="https://user-images.githubusercontent.com/89816441/224619145-9acbf1e0-c49b-4a71-ba74-4aaf414397d9.png">
+<tr><img width="600" alt="Screen Shot 2023-03-13 at 01 53 14" src="https://user-images.githubusercontent.com/89816441/224618827-d426c733-c468-4d80-bae7-70f6164ae70c.png">
+<tr><img width="600" alt="Screen Shot 2023-03-13 at 01 55 35" src="https://user-images.githubusercontent.com/89816441/224619145-9acbf1e0-c49b-4a71-ba74-4aaf414397d9.png">
 
 
 </tr></table>
