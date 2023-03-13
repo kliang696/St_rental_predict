@@ -29,14 +29,14 @@ my_df["laundry_options"].fillna("no laundry on site", inplace=True)
 my_df.dropna(inplace=True)
 ```
 
-
+----------
 
 2. __Drop the unnessary column__
 To ensure that the dataset is  optimized for modeling purposes, we will remove the irrelevant columns, such as 'url', 'id', 'region_url', 'image_url', and 'description'. These columns do not provide any information that is relevant to predicting rental house prices, and thus their exclusion will not impact the accuracy of the prediction model.
 ```python
 df=my_df.drop(columns=['url', 'id','region_url','image_url', 'description'])
 ```
-
+----------
 3. __Outlier Handling__
 To ensure that the dataset contains only livable and relevant rental properties, we will exclude properties with more than five bedrooms and bathrooms. We will also ensure that the price of each rental property is greater than 0 and the property size is greater than 200 square feet.
 ```python
@@ -66,7 +66,7 @@ for i in range(len(num_price_sf)):
 <td><img width="407" alt="Screen Shot 2023-03-11 at 22 48 20" src="https://user-images.githubusercontent.com/89816441/224523186-67a2cc76-47d8-47b8-ad1d-0dee08affe3b.png">
 </tr></table>
 
-
+----------
 
 4. __Duplicated Row__
 Upon examining the rental house dataset, we have determined that there are no duplicate rows present in the dataset. This means that each row in the dataset is unique and does not contain any exact copies of other rows.
@@ -74,11 +74,13 @@ Upon examining the rental house dataset, we have determined that there are no du
 duplicates = my_df.duplicated()
 print("Number of duplicates:", duplicates.sum())
 ```
+----------
 5. __Heat Map__
 The heatmap will display the correlation between different variables, with the strength of the correlation indicated by the intensity of the color. By analyzing the heatmap, we can identify the variables that have the strongest correlation with rental prices and use this information to make informed decisions and set competitive prices for rental properties.
 <img width="800" alt="Screen Shot 2023-03-11 at 22 54 37" src="https://user-images.githubusercontent.com/89816441/224523381-77e89da4-1608-4e0a-b3e7-0e212c639959.png">
 Upon analyzing the heatmap, we have found that the top three features that are most correlated with rental prices are sqfeet, beds, and baths. This finding aligns with our expectations, as we would anticipate that as the property size and number of bedrooms and bathrooms increase, the rental price would also increase accordingly.
 
+----------
 
 6. __Categorical Feature Encoding__
 Since the categorical values in the dataset are nominal, we will use the pandas `get_dummies()` function instead of the label encoder to create new columns based on each category. By using `get_dummies()`, we can create new columns for each category, such as state_ca, state_ny, etc.
