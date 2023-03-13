@@ -11,14 +11,14 @@ The rental house market is rapidly changing, creating challenges for stakeholder
 The dataset used for predicting rental house prices is sourced from Craigslist, a popular online platform that lists over thousands of rental properties. The dataset includes 360K rental house  and contains critical variables such as state, region, parking options, laundry options, and most importantly, price, providing a comprehensive understanding of the rental house market. By leveraging this dataset, stakeholders can gain a deeper understanding of market trends and fluctuations, adjust their pricing strategies, and maximize revenue and profitability.
 
 ## Table of Contents
-- Data Analytics & Dashboard with Tableau
 - [Exploratory Data Analysis](#exploratory-data-analysis-and-feature-enginerring)
 - [Modelling & Performance Evaluation](#model-performance-evaluation)
 - [Feature Importance](#feature-importance)
+- Data Analytics & Dashboard with Tableau
 - [Build Web App and deployment with Streamlit](#deployment)
 - [Conclusion](#conclusion)
 
-## Data Analytics & Dashboard with Tableau
+
 
 ## Exploratory Data Analysis & Feature Engineering
 1. __Missing Values__
@@ -128,6 +128,8 @@ The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and
 		-   Higher values for  `apartment, laundry within unit, attached garage, smoking not allowed`  associated with a higher rental price
 
 <img width="450" alt="Screen Shot 2023-03-12 at 22 16 58" src="https://user-images.githubusercontent.com/89816441/224593008-711cb0f8-4e73-41a8-a3b3-13e43ab2ba41.png">
+
+## Data Analytics & Dashboard with Tableau
 
 ## Web App & Deployment
 Developed Web App with a user-friendly interface on the Streamlit and powered by Catboost Model, providing accurate predictions for rental values of houses. This app provides real-time predictions with Shap force plot explanations for single value inputs, and supports big data input for detailed EDA and batch prediction. 
