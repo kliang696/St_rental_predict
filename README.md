@@ -102,6 +102,8 @@ The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and
 <tr><img width="539" alt="Screen Shot 2023-03-11 at 23 41 52" src="https://user-images.githubusercontent.com/89816441/224524808-5d88b16d-b465-4f89-8859-44f46e8b83d2.png">
 </tr></table>
 
+-  Based on the hyperparameter importance plot, we observe that the learning rate has the highest importance value of 0.79. Furthermore, it appears that the model's performed best when the learning rate is in the range of 0.1 to 0.2.
+
 <table><tr>
 <tr><img width="600" alt="Screen Shot 2023-03-13 at 01 53 14" src="https://user-images.githubusercontent.com/89816441/224618827-d426c733-c468-4d80-bae7-70f6164ae70c.png">
 <tr><img width="600" alt="Screen Shot 2023-03-13 at 01 55 35" src="https://user-images.githubusercontent.com/89816441/224619145-9acbf1e0-c49b-4a71-ba74-4aaf414397d9.png">
