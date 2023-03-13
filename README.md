@@ -98,8 +98,22 @@ The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and
 </tr></table>
 
 ## Feature Importance
+-   The `SHAP` summary plot  visualizes the importance of each feature in a model for predicting a specific outcome, with the x-axis representing the `SHAP` value and the y-axis ranking the features by importance. The color red indicates a higher value, while blue represents a lower value. 
+	- **The Top 5 importance of features are:**
+	    -   `long`
+	    -   `sqfeet`
+	    -   `lat`
+	    -   `laundry options w/d in unit`
+	    -   `state ca`
+    - **From the plot, we can conclude the following insights:** 
+	    -  `long and lat` are most important feature, it means locations are the most important when it comes to rental price
+		 -   Higher values for  `sqfeet, bed, baths`  associated with a higher rental price, and vice versa.
+		 -   Higher values for  `state_Ca, state_fl, state_co`  associated with a higher rental price, it indicates that ca, fl and co have highest rental price
+		-   Higher values for  `apartment, laundry within unit, attached garage, smoking not allowed`  associated with a higher rental price
 
 <img width="585" alt="Screen Shot 2023-03-12 at 22 16 58" src="https://user-images.githubusercontent.com/89816441/224593008-711cb0f8-4e73-41a8-a3b3-13e43ab2ba41.png">
+
+
 
 
 
