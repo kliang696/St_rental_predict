@@ -23,7 +23,7 @@ my_df.isnull().sum()
 ```
 <img width="304" alt="Screen Shot 2023-03-11 at 22 42 00" src="https://user-images.githubusercontent.com/89816441/224522980-7afe6b2e-57ae-4eec-8a41-168fab49351f.png">
 
-The missing value report reveals that there are 70,000 missing values for laundry_options and 140,000 missing values for parking_options. To address these issues, we will replace the missing values for laundry_options with "no laundry on site" and  "no parking" for parking_options.For rows with only a small number missing values, we will drop them accordingly.
+The missing value report reveals that there are 79026 missing values for laundry_options and 140,687 missing values for parking_options. To address these issues, we will replace the missing values for laundry_options with "no laundry on site" and  "no parking" for parking_options.For rows with only a small number missing values, we will drop them accordingly.
 ```python
 my_df["parking_options"].fillna("no parking", inplace=True)
 my_df["laundry_options"].fillna("no laundry on site", inplace=True)
