@@ -91,8 +91,8 @@ df_encoded = pd.get_dummies(df, columns=cat)
 ```
 ## Modelling Evaluation & Improvement
 The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and R2. The table below clearly indicates that Catboost performed  better than both Lgbm and Linear regression with R^2 score of 0.88. After Hyper-parameter tunning, Lgbm outperformed the catboost and linear regression with R^2 score of 0.90.
-<tr> - Before Hyper-parameter tunning:
 <table><tr>
+<tr> - Before Hyper-parameter tunning:
 <tr><img width="539" alt="Screen Shot 2023-03-11 at 23 41 21" src="https://user-images.githubusercontent.com/89816441/224524788-4e1df892-baf8-4b80-856a-ea64181d24d7.png">
 <tr> - After Hyper-parameter tunning:
 <tr><img width="539" alt="Screen Shot 2023-03-11 at 23 41 52" src="https://user-images.githubusercontent.com/89816441/224524808-5d88b16d-b465-4f89-8859-44f46e8b83d2.png">
@@ -112,10 +112,14 @@ The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and
 		 -   Higher values for  `state_Ca, state_fl, state_co`  associated with a higher rental price, it indicates that ca, fl and co have highest rental price
 		-   Higher values for  `apartment, laundry within unit, attached garage, smoking not allowed`  associated with a higher rental price
 
-<img width="585" alt="Screen Shot 2023-03-12 at 22 16 58" src="https://user-images.githubusercontent.com/89816441/224593008-711cb0f8-4e73-41a8-a3b3-13e43ab2ba41.png">
+<img width="450" alt="Screen Shot 2023-03-12 at 22 16 58" src="https://user-images.githubusercontent.com/89816441/224593008-711cb0f8-4e73-41a8-a3b3-13e43ab2ba41.png">
 
 ## Web App & Deployment
 
+<table><tr>
+<td><img width="500" alt="Screen Shot 2023-03-12 at 22 50 48" src="https://user-images.githubusercontent.com/89816441/224597216-b164f6c3-aa60-4be9-8034-d7c1ee969031.png">
+<td><img width="500" alt="Screen Shot 2023-03-12 at 22 51 19" src="https://user-images.githubusercontent.com/89816441/224597275-789b4c04-a94e-4723-958d-da6e9d3c6a7d.png">
+</tr></table>
 
 
 
