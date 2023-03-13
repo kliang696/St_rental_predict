@@ -102,6 +102,15 @@ The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and
 <tr><img width="539" alt="Screen Shot 2023-03-11 at 23 41 52" src="https://user-images.githubusercontent.com/89816441/224524808-5d88b16d-b465-4f89-8859-44f46e8b83d2.png">
 </tr></table>
 
+<table><tr>
+<td><img width="1326" alt="Screen Shot 2023-03-13 at 01 53 14" src="https://user-images.githubusercontent.com/89816441/224618827-d426c733-c468-4d80-bae7-70f6164ae70c.png">
+<td><img width="1359" alt="Screen Shot 2023-03-13 at 01 55 35" src="https://user-images.githubusercontent.com/89816441/224619145-9acbf1e0-c49b-4a71-ba74-4aaf414397d9.png">
+
+
+</tr></table>
+
+
+
 ## Feature Importance
 -   The `SHAP` summary plot  visualizes the importance of each feature in a model for predicting a specific outcome, with the x-axis representing the `SHAP` value and the y-axis ranking the features by importance. The color red indicates a higher value, while blue represents a lower value. 
 	- **The Top 5 importance of features are:**
