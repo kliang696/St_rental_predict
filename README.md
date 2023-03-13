@@ -115,7 +115,7 @@ The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and
 <img width="450" alt="Screen Shot 2023-03-12 at 22 16 58" src="https://user-images.githubusercontent.com/89816441/224593008-711cb0f8-4e73-41a8-a3b3-13e43ab2ba41.png">
 
 ## Web App & Deployment
-
+Developed Web App with a user-friendly interface on the Streamlit and powered by Catboost Model, providing accurate predictions for rental values of houses. This app provides real-time predictions with Shap force plot explanations for single value inputs, and supports big data input for detailed EDA and batch prediction. 
 <table><tr>
 <td><img width="500" alt="Screen Shot 2023-03-12 at 22 50 48" src="https://user-images.githubusercontent.com/89816441/224597216-b164f6c3-aa60-4be9-8034-d7c1ee969031.png">
 <td><img width="500" alt="Screen Shot 2023-03-12 at 22 51 19" src="https://user-images.githubusercontent.com/89816441/224597275-789b4c04-a94e-4723-958d-da6e9d3c6a7d.png">
