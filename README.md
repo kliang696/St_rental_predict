@@ -18,6 +18,8 @@ The dataset used for predicting rental house prices is sourced from Craigslist, 
 - [Build Web App and deployment with Streamlit](#deployment)
 - [Conclusion](#conclusion)
 
+## Data Analytics & Dashboard with Tableau
+
 ## Exploratory Data Analysis & Feature Engineering
 1. __Missing Values__
 ```python
@@ -131,6 +133,8 @@ Developed Web App with a user-friendly interface on the Streamlit and powered by
 <td><img width="737" alt="Screen Shot 2023-03-12 at 23 13 25" src="https://user-images.githubusercontent.com/89816441/224599864-a2ad6ddd-c851-44ea-953d-24be42579d53.png">
 
 </tr></table>
+
+## Conclusion
 
 
 
