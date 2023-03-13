@@ -5,7 +5,7 @@ The rental house market is rapidly changing, creating challenges for stakeholder
 
 
 ## Data Description
-The dataset used for predicting rental house prices is sourced from Craigslist, a popular online platform that lists over thousands of rental properties. The dataset includes 360K rental house  and contains critical variables such as state, region, parking options, laundry options, and most importantly, price, providing a comprehensive understanding of the rental house market. The inclusion of multiple variables allows for a more accurate prediction of rental prices and enables stakeholders to make data-driven decisions based on comprehensive insights. By leveraging this dataset, stakeholders can gain a deeper understanding of market trends and fluctuations, adjust their pricing strategies, and maximize revenue and profitability.
+The dataset used for predicting rental house prices is sourced from Craigslist, a popular online platform that lists over thousands of rental properties. The dataset includes 360K rental house  and contains critical variables such as state, region, parking options, laundry options, and most importantly, price, providing a comprehensive understanding of the rental house market. By leveraging this dataset, stakeholders can gain a deeper understanding of market trends and fluctuations, adjust their pricing strategies, and maximize revenue and profitability.
 
 ## Table of Contents
 - Data Analytics & Dashboard with Tableau
@@ -22,7 +22,7 @@ my_df.isnull().sum()
 ```
 <img width="304" alt="Screen Shot 2023-03-11 at 22 42 00" src="https://user-images.githubusercontent.com/89816441/224522980-7afe6b2e-57ae-4eec-8a41-168fab49351f.png">
 
-The missing value report reveals that there are 70,000 missing values for laundry_options and 140,000 missing values for parking_options, while only 1,918 rows have missing values for latitude and longitude. To address these issues, we will replace the missing values for laundry_options with "no laundry on site" and the missing values for parking_options with "no parking," as they are common options when neither is available. However, since there are only a small number of rows with missing values for latitude and longitude, we will drop them to ensure that the data is accurate and reliable for prediction purposes.
+The missing value report reveals that there are 70,000 missing values for laundry_options and 140,000 missing values for parking_options, while only 1,918 rows have missing values for latitude and longitude. To address these issues, we will replace the missing values for laundry_options with "no laundry on site" and  "no parking" for parking_options as they are common options when neither is available. However, since there are only a small number of rows with missing values, we will drop them accordingly.
 ```python
 my_df["parking_options"].fillna("no parking", inplace=True)
 my_df["laundry_options"].fillna("no laundry on site", inplace=True)
@@ -52,7 +52,7 @@ After analyzing the rental house price and size data, we have identified the exi
 </tr></table>
 
 
-To address this issue, we will use the percentile capping technique with  winsorization to limit the data to the 0-99 percentile range. Any data points exceeding the 99 percentile will be transformed to the threshold of 99. This technique will enable us to remove the outliers and ensure that the dataset is more representative of the rental house market's general trends and characteristics. Based on our analysis, we have found that this technique has effectively transformed the price and size data to a normal distribution, making it more useful for predictive modeling purposes.
+To address this issue, we will use the percentile capping technique to limit the data to the 0-99 percentile range. Any data points exceeding the 99 percentile will be transformed to the threshold of 99. This technique will enable us to remove the outliers and ensure that the dataset is more representative of the rental house market's general trends and characteristics.
 ```python
 lower_threshold = 0
 upper_threshold = 0.01
@@ -75,13 +75,13 @@ duplicates = my_df.duplicated()
 print("Number of duplicates:", duplicates.sum())
 ```
 5. __Heat Map__
-To identify the top features that are most correlated with rental prices, we will use a heatmap, which is an effective visualization tool for analyzing the relationship between two variables. The heatmap will display the correlation between different variables, with the strength of the correlation indicated by the intensity of the color. By analyzing the heatmap, we can identify the variables that have the strongest correlation with rental prices and use this information to make informed decisions and set competitive prices for rental properties.
+The heatmap will display the correlation between different variables, with the strength of the correlation indicated by the intensity of the color. By analyzing the heatmap, we can identify the variables that have the strongest correlation with rental prices and use this information to make informed decisions and set competitive prices for rental properties.
 <img width="800" alt="Screen Shot 2023-03-11 at 22 54 37" src="https://user-images.githubusercontent.com/89816441/224523381-77e89da4-1608-4e0a-b3e7-0e212c639959.png">
 Upon analyzing the heatmap, we have found that the top three features that are most correlated with rental prices are sqfeet, beds, and baths. This finding aligns with our expectations, as we would anticipate that as the property size and number of bedrooms and bathrooms increase, the rental price would also increase accordingly.
 
 
 6. __Categorical Feature Encoding__
-Since the categorical values in the dataset are nominal, we will use the pandas `get_dummies()` function instead of the label encoder to create new columns based on each category. This technique will enable us to avoid confusion that may arise when using the label encoder to assign numeric values to nominal categories. By using `get_dummies()`, we can create new columns for each category, such as state_ca, state_ny, etc.
+Since the categorical values in the dataset are nominal, we will use the pandas `get_dummies()` function instead of the label encoder to create new columns based on each category. By using `get_dummies()`, we can create new columns for each category, such as state_ca, state_ny, etc.
 ```python
 cat= ['region', 'type', 'laundry_options', 'parking_options', 'state']
 df_encoded = pd.get_dummies(df, columns=cat)
@@ -95,7 +95,9 @@ The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and
 <tr><img width="539" alt="Screen Shot 2023-03-11 at 23 41 52" src="https://user-images.githubusercontent.com/89816441/224524808-5d88b16d-b465-4f89-8859-44f46e8b83d2.png">
 </tr></table>
 
+## Feature Importance
 
+<img width="585" alt="Screen Shot 2023-03-12 at 22 16 58" src="https://user-images.githubusercontent.com/89816441/224593008-711cb0f8-4e73-41a8-a3b3-13e43ab2ba41.png">
 
 
 
