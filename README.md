@@ -4,7 +4,7 @@ The rental house market is rapidly changing, creating challenges for stakeholder
 
 [![Streamlit App](https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=Streamlit&logoColor=white)](https://kliang696-rental-prediction-st-blqb9y.streamlit.app/)
 [![Tableau Dashboard](https://img.shields.io/badge/Tableau-E97627?style=for-the-badge&logo=Tableau&logoColor=white)](https://public.tableau.com/app/profile/kliang6289/viz/U_SRentalPriceDashboard_1/Dashboard2?publish=yes)
-[![Tableau Dashboard](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)](https://public.tableau.com/app/profile/kliang6289/viz/U_SRentalPriceDashboard_1/Dashboard2?publish=yes)
+[![Colab](https://img.shields.io/badge/Colab-F9AB00?style=for-the-badge&logo=googlecolab&color=525252)](https://github.com/kliang696/Rental_Prediction/blob/main/code.ipynb)
 
 
 <img  alt="Screen Shot 2023-03-11 at 23 04 04" src="https://user-images.githubusercontent.com/89816441/224523650-8e897103-8eb6-4fbe-9883-fe654d5180df.png" width=700 height=400>
