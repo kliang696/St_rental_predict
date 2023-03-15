@@ -1,6 +1,0 @@
-region,type,sqfeet,beds,baths,cats_allowed,dogs_allowed,smoking_allowed,wheelchair_access,electric_vehicle_charge,comes_furnished,laundry_options,parking_options,lat,long,state
-dallas / fort worth,apartment,956,2,1.0,1,1,1,0,0,0,laundry on site,carport,32.8046,-96.7127,tx
-fredericksburg,apartment,690,1,1.0,1,1,1,0,0,0,w/d in unit,no parking,38.4586,-77.4306,va
-houston,condo,746,1,1.0,0,0,0,0,0,0,w/d in unit,carport,29.7467,-95.6046,tx
-shreveport,house,940,3,3.0,1,1,1,0,0,0,no laundry on site,no parking,32.6976,-93.691,la
-provo / orem,apartment,1182,2,2.0,0,0,1,0,0,0,no laundry on site,no parking,40.2972,-111.721,ut
