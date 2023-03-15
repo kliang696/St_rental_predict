@@ -15,11 +15,11 @@ The dataset used for predicting rental house prices is sourced from Craigslist, 
 
 ## Table of Contents
 - [Exploratory Data Analysis](#exploratory-data-analysis-and-feature-engineering)
-- [Modelling & Performance Evaluation](#modelling-evaluation-and-improvement)  
+- [Modelling Evaluation & Improvement](#modelling-evaluation-and-improvement)  
 - [Feature Importance](#feature-importance) 
-- Data Analytics & Dashboard with Tableau
-- [Build Web App and deployment with Streamlit](#deployment)
-- [Conclusion](#deployment)
+- [Data Analytics & Dashboard with Tableau](#data-analytics-and-dashboard-with-Tableau)
+- [Build Web App and deployment with Streamlit](#web-app-and-deployment)
+- [Conclusion](#conclusion)
 
 
 
@@ -133,9 +133,9 @@ The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and
 
 <img width="450" alt="Screen Shot 2023-03-12 at 22 16 58" src="https://user-images.githubusercontent.com/89816441/224593008-711cb0f8-4e73-41a8-a3b3-13e43ab2ba41.png">
 
-## Data Analytics & Dashboard with Tableau
+## Data Analytics and Dashboard with Tableau
 
-## Web App & Deployment
+## Web App and Deployment
 Developed Web App with a user-friendly interface on the Streamlit and powered by Catboost Model, providing accurate predictions for rental values of houses. This app provides real-time predictions with Shap force plot explanations for single value inputs, and supports big data input for detailed EDA and batch prediction. 
 -  Real Time Prediction
 <table><tr>
