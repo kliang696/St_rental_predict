@@ -14,7 +14,7 @@ The rental house market is rapidly changing, creating challenges for stakeholder
 The dataset used for predicting rental house prices is sourced from Craigslist, a popular online platform that lists over thousands of rental properties. The dataset includes 360K rental house  and contains critical variables such as state, region, parking options, laundry options, and most importantly, price, providing a comprehensive understanding of the rental house market. By leveraging this dataset, stakeholders can gain a deeper understanding of market trends and fluctuations, adjust their pricing strategies, and maximize revenue and profitability.
 
 ## Table of Contents
-- [Exploratory Data Analysis](#exploratory-data-analysis-and-feature-enginerring)
+- [Exploratory Data Analysis](## Exploratory Data Analysis & Feature Engineering)
 - [Modelling & Performance Evaluation](#model-performance-evaluation)
 - [Feature Importance](#feature-importance)
 - Data Analytics & Dashboard with Tableau
