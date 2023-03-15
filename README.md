@@ -14,16 +14,17 @@ The rental house market is rapidly changing, creating challenges for stakeholder
 The dataset used for predicting rental house prices is sourced from Craigslist, a popular online platform that lists over thousands of rental properties. The dataset includes 360K rental house  and contains critical variables such as state, region, parking options, laundry options, and most importantly, price, providing a comprehensive understanding of the rental house market. By leveraging this dataset, stakeholders can gain a deeper understanding of market trends and fluctuations, adjust their pricing strategies, and maximize revenue and profitability.
 
 ## Table of Contents
-- [Exploratory Data Analysis](## Exploratory Data Analysis & Feature Engineering)
-- [Modelling & Performance Evaluation](#model-performance-evaluation)
-- [Feature Importance](#feature-importance)
+- [Exploratory Data Analysis](#exploratory-data-analysis-and-feature-engineering)
+- [Modelling & Performance Evaluation](#modelling-evaluation-and-improvement)  
+- [Feature Importance](#feature-importance) 
 - Data Analytics & Dashboard with Tableau
 - [Build Web App and deployment with Streamlit](#deployment)
-- [Conclusion](#conclusion)
+- [Conclusion](#deployment)
 
 
 
-## Exploratory Data Analysis & Feature Engineering
+
+## Exploratory Data Analysis and Feature Engineering
 1. __Missing Values__
 ```python
 my_df.isnull().sum()
@@ -96,7 +97,7 @@ Since the categorical values in the dataset are nominal, we will use the pandas 
 cat= ['region', 'type', 'laundry_options', 'parking_options', 'state']
 df_encoded = pd.get_dummies(df, columns=cat)
 ```
-## Modelling Evaluation & Improvement
+## Modelling Evaluation and Improvement
 The main metrics used to evaluate the model performance were Mae, Mse, Rmse, and R2. The table below clearly indicates that Catboost performed  better than both Lgbm and Linear regression with R^2 score of 0.88. After Hyper-parameter tunning, Lgbm outperformed the catboost and linear regression with R^2 score of 0.90.
 <table><tr>
 <tr> - Before Hyper-parameter tunning:
