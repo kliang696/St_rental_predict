@@ -11,10 +11,10 @@ from io import BytesIO
 import base64
 import zipfile
 
-with zipfile.ZipFile('/catboost_model-3.pickle.zip', 'r') as zip_ref:
+with zipfile.ZipFile('WebApp/catboost_model-3.pickle.zip', 'r') as zip_ref:
     zip_ref.extractall('.')
 
-with open('catboost_model-3.pickle', 'rb') as f:
+with open('WebApp/catboost_model-3.pickle', 'rb') as f:
      model = pickle.load(f)
 
 
