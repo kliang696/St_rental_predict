@@ -1,4 +1,4 @@
-# U.S House Rental Prediction
+# U.S House Rental Prediction WebApp
 
 The rental house market is rapidly changing, creating challenges for stakeholders to keep up with market trends and fluctuations. Accurately predicting rental house prices has become critical for success in a competitive market.A reliable prediction model can provide valuable insights and enable stakeholders to make informed decisions and set competitive prices to ensure that rental properties remain desirable and profitable.
 
