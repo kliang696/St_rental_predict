@@ -5,6 +5,7 @@ streamlit-shap==1.0.2
 catboost==1.1.1
 matplotlib==3.5.2
 numpy==1.21.4
+ydata_profiling
 
 
 
