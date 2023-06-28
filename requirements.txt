@@ -1,11 +1,10 @@
 
-streamlit==1.19.0
 pandas==1.4.4
-catboost==1.1.1
 shap==0.41.0
 streamlit-shap==1.0.2
-pandas_profiling==3.6.6
-numpy==1.21.5
-numba==0.55.1
+catboost==1.1.1
+matplotlib==3.5.2
+numpy==1.21.4
+numba ==0.53.0
 
 
